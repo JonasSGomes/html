@@ -1,0 +1,35 @@
+div{
+    align-items: center;
+    box-shadow: 0 2px rgba(0,0,0,0.1);
+}
+
+
+img {
+    height: 300px;
+    width: 500px;
+    border-radius: 30px;
+}   
+
+p {
+    display: flex;
+    align-items: center;
+}   
+
+.Auchwitz {
+    display: flex;
+    width: 700px;
+
+}
+
+.Auchwitz img {
+margin-right: 30px;
+}
+
+.pier {
+    width: 500px;
+    height: 300px;
+}
+
+body {
+    background-image: url(../imagens/2468358-icone-de-aviao-plano-no-fundo-azul-gratis-vetor.jpg);
+}

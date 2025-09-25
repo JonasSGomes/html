@@ -1,0 +1,22 @@
+body {
+    background-image: url(img/cvbrj.jpg);
+    background-repeat: no-repeat ;
+    background-size: cover;
+    background-position: center;
+    /*left, right, center, top, bottom*/
+    background-attachment: fixed ;
+    /*scroll - fundo mexe como o texto*/
+    /*fixed - fundo fica fixo*/
+    background-color: aqua;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: lightgray;
+}
+
+p {
+    font-size: 90px ;
+}
