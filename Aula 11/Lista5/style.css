@@ -1,0 +1,56 @@
+.Blur {
+    filter: blur(4px);
+    border-radius: 10px;
+}
+.Grayscale {
+    filter: grayscale(100%);
+    border-radius: 10px;
+}
+.Sepia {
+    filter: sepia(100%);
+    border-radius: 10px;
+}
+.Invert {
+    filter: invert(100%);
+    border-radius: 10px;
+}
+.Contrast {
+    filter: contrast(200%);
+    border-radius: 10px;
+}
+.Brightness {
+    filter: brightness(150%);
+    border-radius: 10px;
+}
+.Brightness:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s;
+    border-radius: 10px;
+}
+
+
+img {
+    width: 250px;
+}
+section {
+      display: grid;
+
+   grid-template-columns: 30% 30% 30%;
+   grid-template-rows: auto 60% auto;
+
+   height: 100vh;
+   gap: 10px;
+}
+
+.filmes img {
+  width: 200px;
+  margin: 10px;
+  filter: grayscale(100%) blur(2px);
+  transition: all 0.4s ease;
+  border-radius: 10px;
+}
+
+.filmes img:hover {
+  filter: grayscale(0%) blur(0);
+  transform: scale(1.05);
+}
