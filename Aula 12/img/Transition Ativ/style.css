@@ -1,0 +1,146 @@
+.botao-colorido {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+
+    font-size: 16px;
+   
+    transition: background-color 0.4s;
+}
+
+.botao-colorido:hover {
+    background-color: #e67e22;
+}
+.crescendo{
+    background-color: #2ecc71;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.crescendo:hover {
+    transform: scale(50);
+}
+.atraso {
+    background-color: #fff;
+    color: #333;
+    border: 2px solid #333;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 
+        background-color 0.4s 0.5s,
+        color 0.4s 0.5s,
+        border-color 0.4s 0.5s;
+}
+
+.atraso:hover {
+    background-color: #8e44ad;
+    color: #fff;
+    border-color: #fff;
+}
+.card {
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    border-radius: 10px;
+    text-align: center;
+    padding: 32px 24px;
+    margin: 32px auto;
+    max-width: 350px;
+    transition:
+        background-color 0.4s,
+        box-shadow 0.4s,
+        transform 0.4s;
+}
+
+.card:hover {
+    background-color: #000;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.20);
+    transform: scale(1.05);
+}
+img {
+    max-width: 100%;
+    border-radius: 10px;
+    transition: transform 0.4s;
+}
+
+.paragrafo1 {
+    color: #34495e;
+    font-size: 18px;
+    transition: color 0.4s, font-size 0.4s;
+}
+
+.paragrafo1:hover {
+    color: #e74c3c;
+    font-size: 24px;
+}
+
+.paragrafo2 {
+    color: #2980b9;
+    font-size: 18px;
+    transition: color 0.4s, font-size 0.4s;
+}
+
+.paragrafo2:hover {
+    color: #27ae60;
+    font-size: 22px;
+}
+
+.paragrafo3 {
+    color: #8e44ad;
+    font-size: 18px;
+    transition: color 0.4s 0.5s, font-size 0.4s 0.5s; /* atraso de 0.5s */
+}
+
+.paragrafo3:hover {
+    color: #f39c12;
+    font-size: 26px;
+}
+.aumento {
+    max-width: 100%;
+    border-radius: 10px;
+    transition: transform 0.4s;
+}
+
+.aumento:hover {
+    transform: scale(50);
+}
+/* ...código existente... */
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    background: #f8f8f8;
+    padding: 16px 0;
+    margin-bottom: 24px;
+}
+
+.menu a {
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    transition: color 0.3s;
+    padding: 4px 0;
+}
+.menu a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background: #e67e22;
+    transition: width 0.3s;
+}
+
+.menu a:hover {
+    color: #e67e22;
+}
+
+.menu a:hover::after {
+    width: 100%;
+}
