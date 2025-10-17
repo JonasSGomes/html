@@ -1,0 +1,80 @@
+body {
+  font-family: Arial;
+  margin: 0;
+  text-align: center;
+}
+
+header {
+  background: #000;
+  color: white;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: yellow;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  background: #000;
+  color: white;
+  border: none;
+  transition: 0.3s;
+  border-radius: 10px;
+}
+
+button:hover {
+  background: #000;
+}
+
+img {
+  width: 200px;
+  transition: 0.3s;
+  border-radius: 15px;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.card {
+  background: #eee;
+  padding: 10px;
+  width: 100px;
+  transition: 0.3s;
+  border-radius: 10px;
+}
+
+.card:hover {
+  background: #ddd;
+  transform: scale(1.05);
+}
+
+footer {
+  background: #000;
+  color: white;
+  padding: 10px;
+}
+
+body{
+    background-image: url("https://images.unsplash.com/photo-1721427192082-6eadc80751f2?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YyVDMyVBOXUlMjBhenVsJTIwY29tJTIwbnV2ZW5zfGVufDB8fDB8fHww&fm=jpg&q=60&w=3000");
+}
+h2{
+    color: #fff
+}
