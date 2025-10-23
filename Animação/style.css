@@ -1,0 +1,217 @@
+.quadrado {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: mudarCor;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+}
+@keyframes mudarCor {
+    from {background: red;}
+    to {background: blue;}
+
+    0% {
+     transform: translateX(0px);
+    }
+    50% {
+     transform: translateX(100px);
+
+    }
+    100% {
+     transform: translateX(200px);
+    }
+}
+
+.quadrado2{
+    width: 100px;
+    height: 100px;
+    background-color:red;
+    animation-name: mudarCor2;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+@keyframes mudarCor2 {
+    from{background-color: red;}
+    to{background-color: blue;}
+
+    0% {
+        background-color: green;
+    }
+    50% {
+        background-color: red;
+    }
+}
+
+
+.botao-animado {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    will-change: transform, background-color, color;
+   
+    animation: destaca 5s infinite alternate;
+}
+
+@keyframes destaca {
+    0% {
+        background-color: #3498db;
+        color: #fff;
+        transform: scale(1);
+    }
+    50% {
+        background-color: #e67e22;
+        color: #000;
+        transform: scale(1.2);
+    }
+    100% {
+        background-color: #8e44ad;
+        color: #fff;
+        transform: scale(1.4);
+    }
+}
+.botao-animado {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    will-change: transform, background-color, color;
+    animation: destaca 5s infinite alternate;
+}
+
+*/
+
+@keyframes destaca {
+    0% {
+        background-color: #3498db;
+        color: #fff;
+        transform: scale(1);
+    }
+    50% {
+        background-color: #e67e22;
+        color: #000;
+        transform: scale(1.2);
+    }
+    100% {
+        background-color: #8e44ad;
+        color: #fff;
+        transform: scale(1.4);
+    }
+}
+
+.texto-piscando {
+    font-weight: 700;
+    font-size: 20px;
+
+    animation: piscar 2s infinite;
+}
+
+@keyframes piscar {
+    0%   { 
+        color: #e74c3c; 
+    } 
+    33%  { 
+        color: #f1c40f;
+    } 
+    66%  {
+         color: #3498db;
+    } 
+    100% {
+         color: #e74c3c; 
+    } 
+}
+
+.caixa-sol {
+    width: 320px;
+    height: 180px;
+    border: 3px solid #ddd;
+    border-radius: 8px;
+    position: relative;
+    margin: 20px auto;
+
+ 
+}
+
+.caixa-sol .sol {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90px;
+    height: 90px;
+    bottom: -70px; 
+    transition: transform 0.4s;
+    animation: nascer 6s infinite alternate ease-in-out;
+    border-radius: 50%;
+}
+
+
+@keyframes nascer {
+    0% {
+        bottom: -70px;
+        transform: translateX(-50%) scale(0.9);
+        opacity: 0.9;
+    }
+    50% {
+        bottom: 28px; 
+        transform: translateX(-50%) scale(1);
+        opacity: 1;
+    }
+    100% {
+        bottom: -70px;
+        transform: translateX(-50%) scale(0.9);
+        opacity: 0.9;
+    }
+}
+
+.caixa-coracao {
+    width: 160px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.coracao {
+    width: 120px;
+    height: auto;
+    display: inline-block;
+    transform-origin: center center;
+    animation: bater 1s infinite;
+    filter: drop-shadow(0 6px 8px rgba(0,0,0,0.12));
+}
+
+@keyframes bater {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(1.1);
+    }
+    50% {
+        transform: scale(1);
+    }
+    75% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.texto-flutuante {
+    display: inline-block;
+    animation: flutuar 4s ease-in-out infinite;
+    will-change: transform;
+}
+
+@keyframes flutuar {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-12px); } /* sobe */
+    100% { transform: translateY(0); }     /* volta */
+}
+
