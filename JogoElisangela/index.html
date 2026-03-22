@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Snake Celular</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body tabindex="0">
+
+<h1>🧬 Snake Celular</h1>
+
+<canvas id="game" width="500" height="500"></canvas>
+
+<h2 id="score">Pontuação: 0</h2>
+<h2 id="vidas">Vidas: ❤️❤️❤️</h2>
+
+<!-- MODAL INICIAL -->
+<div id="inicioModal" class="modal ativo">
+    <div class="modal-content">
+        <h2>Regras</h2>
+        <p>
+        🎯 Chegue a 80 pontos<br>
+        ✔  Acerto: +10<br>
+        ❌ Erro: perde tamanho<br>
+        🐍 Colisão: -5 pontos<br>
+        ❤️ 3 vidas
+        </p>
+        <button onclick="iniciarJogo()">Começar</button>
+    </div>
+</div>
+
+<!-- MODAL PERGUNTA -->
+<div id="modalPergunta" class="modal">
+    <div class="modal-content">
+
+        <img id="imgPergunta" class="img-top">
+
+        <h2 id="pergunta"></h2>
+
+        <div id="opcoes"></div>
+    </div>
+</div>
+
+<!-- MODAL RESULTADO -->
+<div id="modalResultado" class="modal">
+    <div class="modal-content">
+        <h2 id="tituloResultado"></h2>
+        <p id="textoResultado"></p>
+        <button onclick="resetarJogo()">Jogar Novamente</button>
+    </div>
+</div>
+
+<!-- FEEDBACK -->
+<div id="feedback" class="feedback"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
