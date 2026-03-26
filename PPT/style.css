@@ -1,0 +1,23 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    font-family: 'Courier New', Courier, monospace;
+}
+img {
+    width: 300px;
+    height: 400px;
+}
+h1 {
+    font-size: 60px;
+}
+button {
+    border: 5px solid black;
+    /* none para ser borda */
+    background: none;
+}
+h2 {
+    font-size: 40px;
+}
