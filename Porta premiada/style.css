@@ -1,0 +1,17 @@
+#imagens {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 100px;
+    font-family: fantasy;
+    color: yellow;
+}
+body {
+    background-image: url(https://wallpapers.com/images/hd/toy-story-cloud-2296-x-1282-background-q8evnpgz39k43mhw.jpg);
+}
+
