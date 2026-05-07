@@ -1,0 +1,157 @@
+.ativo{
+    background-color: purple;
+    color:black;
+    font-size: 30px;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.destaque {
+    border: 5px solid green ;
+    font-size: 30px;
+}
+.grande {
+    font-size: 100px; 
+}
+.escondido {
+    display: none;
+}
+
+/* 7. Destaque ao passar mouse */
+.hover {
+    background-color: yellow;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* 8. Botão ativo */
+.botao-ativo {
+    background-color: #4CAF50 !important;
+    color: white;
+    border: 3px solid darkgreen;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+/* 9. Seleção de item */
+.item {
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    cursor: pointer;
+}
+
+.selecionado {
+    background-color: #4CAF50;
+    color: white;
+    border: 2px solid darkgreen;
+}
+
+/* 10. Modo escuro */
+body.dark {
+    background-color: #222;
+    color: #fff;
+}
+
+body.dark h1 {
+    color: #fff;
+}
+
+body.dark button {
+    background-color: #555;
+}
+
+body.dark button:hover {
+    background-color: #777;
+}
+
+body.dark .item,
+body.dark .menu-hidden a {
+    background-color: #333;
+    border-color: #555;
+    color: #fff;
+}
+
+body.dark .selecionado {
+    background-color: #4CAF50;
+    border-color: darkgreen;
+}
+
+/* 11. Menu escondido */
+.menu-hidden {
+    display: none;
+    background-color: #333;
+    border: 2px solid #666;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.mostrar {
+    display: block;
+}
+
+.menu-hidden a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    margin: 5px 0;
+    background-color: #444;
+    border-radius: 3px;
+}
+
+.menu-hidden a:hover {
+    background-color: #555;
+}
+
+/* 12. Caixa interativa */
+#caixa-interativa {
+    padding: 20px;
+    background-color: #e0e0e0;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#caixa-interativa.cores {
+    background-color: #FF6B6B;
+}
+
+#caixa-interativa.borda {
+    border: 5px solid #2196F3;
+}
+
+/* 13. Botões de cores */
+#caixa-cores {
+    padding: 30px;
+    background-color: #f0f0f0;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#caixa-cores.vermelho {
+    background-color: red;
+    color: white;
+}
+
+#caixa-cores.azul {
+    background-color: blue;
+    color: white;
+}
+
+#caixa-cores.verde {
+    background-color: green;
+    color: white;
+}
