@@ -1,0 +1,126 @@
+* {
+    margin: 10px;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #333;
+    margin-top: 30px;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* 1. Selecionar elementos */
+.elemento {
+    width: 150px;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: lightblue;
+    border: 2px solid #ccc;
+    cursor: pointer;
+}
+
+.elemento.ativado {
+    background-color: lightcoral;
+}
+
+/* 2. Adicionar classe em todos */
+#paragrafo, #caixa {
+    padding: 15px;
+    background-color: lightgray;
+    margin: 10px 0;
+}
+
+.ativo {
+    background-color: lightgreen;
+    color: darkgreen;
+    font-weight: bold;
+}
+
+/* 3. Clique em todos */
+.clicavel {
+    padding: 15px;
+    background-color: lightyellow;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+    cursor: pointer;
+}
+
+/* 4. Adicionar classe ao clicar */
+.div-rosa {
+    padding: 15px;
+    background-color: #f0f0f0;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+    cursor: pointer;
+}
+
+.rosa {
+    background-color: lightpink;
+    color: darkred;
+}
+
+/* 5. Toggle */
+.div-toggle {
+    padding: 15px;
+    background-color: #f0f0f0;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+    cursor: pointer;
+}
+
+.div-toggle.toggle-ativo {
+    background-color: lightblue;
+    color: darkblue;
+    font-weight: bold;
+}
+
+/* 6 e 7. Destacar vários */
+.destaque-multi {
+    padding: 15px;
+    background-color: #f0f0f0;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+    cursor: pointer;
+}
+
+.destaque-multi.selecionado {
+    background-color: lightyellow;
+    color: #d9a500;
+    border: 3px solid #d9a500;
+}
+
+/* 8. Seleção única */
+.unica {
+    padding: 15px;
+    background-color: #f0f0f0;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+    cursor: pointer;
+}
+
+.unica.ativo {
+    background-color: lightcoral;
+    color: darkred;
+    font-weight: bold;
+    border: 3px solid darkred;
+}
+
+/* 9. Menu ativo */
+nav {
+    margin: 20px 0;
+}
+
+.menu-item {
+    margin: 5px;
+    cursor: pointer;
+}
+
+.menu-item.menu-ativo {
+    background-color: lightgreen;
+    color: darkgreen;
+    font-weight: bold;
+}
+
