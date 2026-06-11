@@ -1,29 +1,22 @@
-let slides = document.querySelectorAll('.slide');
+let slides = Array.from(document.querySelectorAll('.slide'));
 let indice = 0;
 
 function mostrarSlide(posicao) {
-  for (let i = 0; i < slides.length; i++) {
-    slides[i].classList.remove('active');
-  }
+  if (slides.length === 0) return;
 
-  slides[posicao].classList.add('active');
-  indice = posicao;
+  indice = (posicao + slides.length) % slides.length;
+
+  slides.forEach((slide, i) => {
+    slide.classList.toggle('active', i === indice);
+  });
 }
 
 function slideProximo() {
-  indice = indice + 1;
-  if (indice >= slides.length) {
-    indice = 0;
-  }
-  mostrarSlide(indice);
+  mostrarSlide(indice + 1);
 }
 
 function slideAnterior() {
-  indice = indice - 1;
-  if (indice < 0) {
-    indice = slides.length - 1;
-  }
-  mostrarSlide(indice);
+  mostrarSlide(indice - 1);
 }
 
 function pesquisarJoias() {
@@ -64,7 +57,7 @@ if (formulario) {
   });
 }
 
-let perguntas = document.querySelectorAll('.faq-question');
+let perguntas = document.querySelectorAll('.pergunta');
 for (let i = 0; i < perguntas.length; i++) {
   perguntas[i].addEventListener('click', function () {
     let resposta = this.nextElementSibling;
