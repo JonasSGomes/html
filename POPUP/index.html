@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Popup Simples</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <button onclick="abrirPopup()">Abrir popup</button>
+
+  <div id="meuPopup" class="popup">
+    <div class="conteudo">
+      <span class="fechar" onclick="fecharPopup()">&times;</span>
+      <h2>Confirmar exclusão</h2>
+      <p>Tem certeza que deseja excluir este item? Essa ação não poderá ser desfeita.</p>
+      <div class="acoes">
+        <button class="btn-cancelar" onclick="fecharPopup()">Cancelar</button>
+        <button onclick="confirmar()">Excluir</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
