@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contagem regressiva para o Carnaval 2027.">
+    <title>Carnaval 2027 | Contagem Regressiva</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="luz luz-1"></div>
+    <div class="luz luz-2"></div>
+
+    <header class="cabecalho">
+        <div class="cabecalho-conteudo">
+
+            <span class="tag">
+                CARNAVAL • 2027
+            </span>
+
+            <h1>
+                A maior festa do ano
+                <span>está chegando.</span>
+            </h1>
+
+            <p>
+                Prepare a fantasia, reúna os amigos e acompanhe
+                a contagem regressiva para o Carnaval 2027.
+            </p>
+
+            <a href="#contador" class="botao-principal">
+                Ver contagem regressiva
+                <span>↓</span>
+            </a>
+
+        </div>
+    </header>
+
+    <main>
+
+        <section id="contador" class="contador-container">
+
+            <div class="titulo-secao">
+                <span>CONTAGEM REGRESSIVA</span>
+                <h2>Falta pouco para a folia</h2>
+                <p>Carnaval 2027</p>
+            </div>
+
+            <div class="contador" id="fevereiro" aria-live="polite">
+
+                <div class="tempo">
+                    <strong id="dias">00</strong>
+                    <span>Dias</span>
+                </div>
+
+                <div class="separador">:</div>
+
+                <div class="tempo">
+                    <strong id="horas">00</strong>
+                    <span>Horas</span>
+                </div>
+
+                <div class="separador">:</div>
+
+                <div class="tempo">
+                    <strong id="minutos">00</strong>
+                    <span>Minutos</span>
+                </div>
+
+                <div class="separador">:</div>
+
+                <div class="tempo">
+                    <strong id="segundos">00</strong>
+                    <span>Segundos</span>
+                </div>
+
+            </div>
+
+            <div class="data-evento">
+                <span class="icone-calendario">◉</span>
+                09 de fevereiro de 2027
+            </div>
+
+        </section>
+
+        <section class="experiencias">
+
+            <div class="titulo-secao esquerda">
+                <span>VIVA O CARNAVAL</span>
+                <h2>Momentos inesquecíveis</h2>
+                <p>
+                    Música, energia, cores e experiências que fazem
+                    do Carnaval uma das maiores festas do mundo.
+                </p>
+            </div>
+
+            <div class="carrossel">
+
+                <div class="slides">
+
+                    <article class="slide ativo">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1600&q=90"
+                            alt="Multidão curtindo um festival"
+                        >
+
+                        <div class="overlay"></div>
+
+                        <div class="texto">
+                            <span class="numero-slide">01</span>
+                            <h2>Viva a folia</h2>
+                            <p>
+                                Sinta a energia, a música e a emoção
+                                de cada momento.
+                            </p>
+                        </div>
+
+                    </article>
+
+                    <article class="slide">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=1600&q=90"
+                            alt="Público em um grande evento musical"
+                        >
+
+                        <div class="overlay"></div>
+
+                        <div class="texto">
+                            <span class="numero-slide">02</span>
+                            <h2>Música e diversão</h2>
+                            <p>
+                                Celebre com amigos em uma experiência
+                                cheia de alegria.
+                            </p>
+                        </div>
+
+                    </article>
+
+                    <article class="slide">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?auto=format&fit=crop&w=1600&q=90"
+                            alt="Festival com luzes e público"
+                        >
+
+                        <div class="overlay"></div>
+
+                        <div class="texto">
+                            <span class="numero-slide">03</span>
+                            <h2>Uma noite inesquecível</h2>
+                            <p>
+                                Escolha sua fantasia e aproveite
+                                cada segundo da festa.
+                            </p>
+                        </div>
+
+                    </article>
+
+                </div>
+
+                <button
+                    class="btn anterior"
+                    id="botaoAnterior"
+                    aria-label="Slide anterior"
+                >
+                    ←
+                </button>
+
+                <button
+                    class="btn proximo"
+                    id="botaoProximo"
+                    aria-label="Próximo slide"
+                >
+                    →
+                </button>
+
+                <div class="controle-carrossel">
+                    <div class="bolinhas" id="bolinhas"></div>
+
+                    <span class="contador-slide" id="contadorSlide">
+                        01 / 03
+                    </span>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-conteudo">
+
+            <div>
+                <strong>CARNAVAL 2027</strong>
+                <p>Contagem regressiva para a resenha.</p>
+            </div>
+
+            <span>
+                © 2027 • Todos os direitos reservados
+            </span>
+
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
