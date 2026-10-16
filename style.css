@@ -1,0 +1,221 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Roboto+Mono:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    background: #20232b;
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+}
+
+/* CORPO DA POKEDEX */
+
+h1 {
+    width: min(100%, 390px);
+    min-height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 30px 15px 10px;
+    background: linear-gradient(135deg, #fa3434, #d60017 65%, #a90012);
+    border: 4px solid #8e0613;
+    border-radius: 25px 25px 0 0;
+    box-shadow:
+        inset 4px 4px 0 #ff7777,
+        inset -5px -5px 0 #9f0013,
+        0 8px 0 #78000e;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 25px;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 3px #8e0613;
+}
+
+/* LENTE AZUL SUPERIOR */
+
+h1::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 18px;
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 25%, #ffffff 0 5%, #8cf8ff 10%, #00a8ff 35%, #0053bd 65%, #062c66 80%);
+    border: 5px solid #e4e8ed;
+    box-shadow:
+        0 0 0 3px #4d5158,
+        0 0 12px #00c8ff;
+}
+
+h1::after {
+    content: "POKÉMON DATA SYSTEM";
+    position: absolute;
+    bottom: 12px;
+    right: 15px;
+    font-size: 8px;
+    letter-spacing: 2px;
+    color: #ffb7b7;
+    text-shadow: none;
+}
+
+/* CAMPO DE PESQUISA */
+
+#input {
+    width: min(100%, 390px);
+    height: 48px;
+    padding: 0 15px;
+    background: #f0f0e8;
+    color: #242424;
+    border: 3px solid #a90012;
+    border-top: none;
+    outline: none;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 13px;
+}
+
+#input::placeholder {
+    color: #777;
+    text-transform: uppercase;
+    font-size: 11px;
+}
+
+/* BOTÃO VERMELHO */
+
+#botao {
+    width: min(100%, 390px);
+    height: 48px;
+    background: linear-gradient(#ff5353, #c90019);
+    color: white;
+    border: 3px solid #8e0613;
+    border-top: 1px solid #ff7777;
+    border-radius: 0 0 7px 7px;
+    box-shadow: 0 7px 0 #78000e;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 900;
+    font-size: 13px;
+    letter-spacing: 3px;
+    cursor: pointer;
+    transition: 0.15s;
+}
+
+#botao:hover {
+    background: linear-gradient(#ff7777, #e40020);
+}
+
+#botao:active {
+    transform: translateY(4px);
+    box-shadow: 0 3px 0 #78000e;
+}
+
+/* TELA DA POKEDEX */
+
+#resultado {
+    position: relative;
+    width: min(100%, 390px);
+    min-height: 310px;
+    margin-top: 25px;
+    padding: 45px 20px 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    overflow: hidden;
+    color: #173b26;
+    text-align: center;
+    background:
+        repeating-linear-gradient(
+            0deg,
+            transparent,
+            transparent 3px,
+            #173b2608 4px
+        ),
+        linear-gradient(135deg, #c8e6a0, #a6ce79);
+    border: 12px solid #25272b;
+    border-radius: 8px;
+    outline: 4px solid #777b82;
+    box-shadow:
+        inset 0 0 0 3px #647f4c,
+        inset 0 0 20px #3d5e2c55,
+        0 0 0 8px #c90019,
+        0 0 0 12px #8e0613,
+        0 14px 25px #0008;
+}
+
+/* INFORMAÇÕES DA TELA */
+
+#resultado::before {
+    content: "POKÉDEX  /  SCANNER";
+    position: absolute;
+    top: 10px;
+    left: 12px;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #345c36;
+}
+
+#resultado::after {
+    content: "SYSTEM ONLINE  ●";
+    position: absolute;
+    bottom: 10px;
+    right: 12px;
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #315b31;
+}
+
+#resultado h2 {
+    margin-top: 10px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 23px;
+    font-weight: 900;
+    color: #1c482b;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#resultado img {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+    image-rendering: pixelated;
+    filter: drop-shadow(2px 4px 1px #38572b55);
+    transition: transform 0.2s;
+}
+
+#resultado img:hover {
+    transform: scale(1.1);
+}
+
+/* CELULAR */
+
+@media (max-width: 430px) {
+    body {
+        padding: 30px 22px;
+    }
+
+    h1 {
+        font-size: 21px;
+    }
+
+    #resultado {
+        min-height: 280px;
+    }
+}
